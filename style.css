@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin : 0;
     padding: 0;
@@ -22,7 +22,6 @@ body{
 }
 
 .app h1{
-    font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 30px;
     font-weight: 25px;
