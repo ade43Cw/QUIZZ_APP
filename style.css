@@ -43,7 +43,7 @@ body{
 }
 
 .quiz img{
-    width: 450px;
+    width: 500px;
     border-radius: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -116,6 +116,38 @@ body{
     margin: 20px auto 0 ;
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .app{
+        margin-top: 80px;
+        margin-left: 10px;
+        width: 95%; 
+    }
+
+    .app h1{
+        font-size: 28px;
+    }
+
+    .quiz h2{
+        font-size: 18px;
+    }
+
+    .quiz{
+        padding: 10px 0;
+    }
+
+    .quiz img{
+        width: 360px;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .btn{
+        margin: 5px 0;
+    }
+}
+
 
 @media (max-width: 395px) {
     .app{
