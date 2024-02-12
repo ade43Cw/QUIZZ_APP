@@ -117,7 +117,7 @@ body{
     cursor: pointer;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 390px) {
     .app{
         margin-top: 80px;
         margin-left: 10px;
