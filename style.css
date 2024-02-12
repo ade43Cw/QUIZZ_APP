@@ -7,12 +7,12 @@
 }
 
 body{
-    background: #7a00fce8;
+    background: #ffffffe8;
 }
 
 .app{
     background: #040131;
-    box-shadow: 0 0 200px #26ff3c;
+    box-shadow: 0 0 50px #26ff3c;
     width: 90%;
     box-shadow: 10px;
     max-width: 600px;
@@ -22,6 +22,7 @@ body{
 }
 
 .app h1{
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 30px;
     font-weight: 25px;
@@ -31,7 +32,7 @@ body{
     padding-bottom: 30px;
 }
 
-.quiz{
+.quiz{  
     padding: 20px;
 }
 
@@ -39,6 +40,13 @@ body{
     font-size: 20px;
     color: #ffffff;
     font-weight: 600
+}
+
+.quiz img{
+    width: 450px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .btn {
