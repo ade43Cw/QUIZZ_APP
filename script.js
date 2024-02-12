@@ -1,7 +1,9 @@
+
 const questions = [
     {
         questionType: "multipleChoice",
-        question: "Whitch is large animal in the World?",
+        question: "Which is large animal in the World?",
+        image: "/imge/Component 1.png",
         answer: [
             {text: "Shark", correct: false},
             {text: "Blue While", correct: true},
@@ -11,17 +13,19 @@ const questions = [
     },
     {
         questionType: "multipleChoice",
-        question: "Whitch is the largest desert in the Word?",
+        question: "Which is the largest desert in the Word?",
+        image: "/imge/Component 2.png",
         answer: [
             {text: "Kalahari", correct: false},
             {text: "Gobi", correct: false},
-            {text: "Sahara", correct: false},
-            {text: "Antarctica", correct: true},
+            {text: "Sahara", correct: true},
+            {text: "Antarctica", correct: false},
         ]
     },
     {
         questionType: "multipleChoice",
-        question: "Whitch is the smallest continent in the World?",
+        question: "Which is the smallest continent in the World?",
+        image: "/imge/Component 3.png",
         answer: [
             {text: "Asia", correct: false},
             {text: "Australia", correct: true},
@@ -31,7 +35,8 @@ const questions = [
     },
     {
         questionType: "multipleChoice",
-        question: "Whitch is small country in the World?",
+        question: "Which is small country in the World?",
+        image: "/imge/Component 4.png",
         answer: [
             {text: "Sri Lanka", correct: false},
             {text: "Monaco", correct: false},
@@ -41,18 +46,20 @@ const questions = [
     },
     {
         questionType: "multipleChoice",
-        question: "Which is the capital of Malaysia??",
+        question: "Which is animal live in water?",
+        image: "/imge/Component 5.png",
         answer: [
-            {text: "Jakarta", correct: false},
-            {text: "Manila", correct: false},
-            {text: "New York", correct: false},
-            {text: "Kuala Lumpur", correct: true},
+            {text: "Chicken", correct: false},
+            {text: "Dog", correct: false},
+            {text: "Cat", correct: false},
+            {text: "Nemo", correct: true},
         ]
     },
     {
         questionType: "fillInTheBlank",
-        question: "Ibu kota Italia adalah ________.",
-        answer: ["Roma", "roma", "Rome", "rome"]
+        question: "Jawablah pertanyaan berikut ini!",
+        image: "/imge/soal 6.png",
+        answer: ["250g", "250 gram"]
     },
     {
         questionType: "fillInTheBlank",
@@ -77,6 +84,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
+const imageElement = document.getElementById("img");
 const answerBtn = document.getElementById("answer-buttons");
 const nextBtn = document.getElementById("nextBtn");
 
@@ -95,6 +103,8 @@ function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    imageElement.src = currentQuestion.image;
 
     if (currentQuestion.questionType === "multipleChoice") {
         currentQuestion.answer.forEach(answer => {
