@@ -11,25 +11,30 @@ body{
 }
 
 .app{
-    background: #040131;
+    background: #ffffff;
     box-shadow: 0 0 50px #26ff3c;
     width: 90%;
     box-shadow: 10px;
     max-width: 600px;
-    margin : 100px auto 0;
+    margin : 50px auto 0;
     border-radius: 10px;
     padding: 30px;
 }
 
 .app h1{
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Protest Riot", sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 25px;
     color: #00eaff;
     font-weight: 600;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000;
     padding-bottom: 30px;
+}
+
+.app span{
+    font-family: "Protest Riot", sans-serif;
+    color: #33ff00;
 }
 
 .quiz{  
@@ -38,7 +43,7 @@ body{
 
 .quiz h2{
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     font-weight: 600
 }
 
@@ -75,6 +80,7 @@ body{
 #nextBtn{
     display: none;
     background: #2aff42;
+    box-shadow: 0 5px 0 #4bac54 ;
     padding: 7px;
     font-size: 17px;
     width: 130px;
@@ -82,6 +88,9 @@ body{
     border-radius: 20px;
     margin: 20px auto 0 ;
     cursor: pointer;
+    color:  #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .correct{
@@ -115,6 +124,76 @@ body{
     border-radius: 20px;
     margin: 20px auto 0 ;
     cursor: pointer;
+    box-shadow: 0 5px 0 #4bac54 ;
+}
+
+.app{
+    display: none;
+}
+
+.first-window{
+    background: #ffffff;
+    box-shadow: 0 0 50px #26ff3c;
+    width: 90%;
+    box-shadow: 10px;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin : 80px auto 0;
+}
+
+.first-window img{
+    width: 350px;
+}
+
+#continue{
+    padding: 10px;
+    width: 180px;
+    border-radius: 20px;
+    background-color: #26ff3c;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 5px 0 #4bac54 ;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.tag{
+    font-size: 38px;
+}
+
+@media (max-width: 750px) {
+    .app{
+        margin-top: 80px;
+        margin-left: auto;
+        width: 95%; 
+    }
+
+    .app h1{
+        font-size: 28px;
+    }
+
+    .quiz h2{
+        font-size: 18px;
+    }
+
+    .quiz{
+        padding: 20px 0;
+    }
+
+    .quiz img{
+        width: 500px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .btn{
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 450px) {
