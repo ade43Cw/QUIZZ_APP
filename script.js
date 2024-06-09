@@ -110,6 +110,7 @@
         score = 0;
         nextBtn.innerHTML = "Next";
         showQuestion();
+        imageElement.style.display = "block";   
     }
 
     function showQuestion() {
